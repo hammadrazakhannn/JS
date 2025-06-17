@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
-    <title>DOM learning</title>
-    <style>
-        .bg-black{
-            background-color: #212121;
-            color: #fff;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
 </head>
-<body class="bg-black">
-    <div >
-        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <input type="password" name="" id="">
 
-        <ul>
-            <li class="list-item">one</li>
-            <li class="list-item">two</li>
-            <li class="list-item">three</li>
-            <li class="list-item">four</li>
-        </ul>
-    </div>
+<body style="background-color: #212121; color: #fff;">
+
 </body>
+<script>
+    // const div = document.createElement('div');
+    // console.log(div);
+    // div.className = 'main'
+    // div.id = Math.round(Math.random() * 10 + 1)
+    // div.setAttribute("title", "yoyoyo");
+    // div.style.backgroundColor = 'blue';
+    // div.style.padding = '12px'
+    // div.innerText = "Salamun Alaikum"
+    // // const addtext = document.createTextNode('Salamun Alaikum')
+    // // div.appendChild(addtext)
+
+    // document.body.appendChild(div)
+
+   const newdiv = (text, bgclr) => {
+        const div = document.createElement('div');
+        console.log(div);
+        div.className = 'main'
+        div.id = Math.round(Math.random() * 10 + 1)
+        div.setAttribute("title", "yoyoyo");
+        div.innerText = text
+        div.style.backgroundColor = bgclr;
+        document.body.appendChild(div)
+      
+    } 
+    console.log(newdiv("hello", 'yellow'))
+
+
+</script>
+
 </html>
